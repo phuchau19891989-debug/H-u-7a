@@ -20,14 +20,70 @@ ImageButton.MouseButton1Down:Connect(function()
     game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
 end)
 
-local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))()
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 repeat wait() until game:IsLoaded()
 local Window = Fluent:CreateWindow({
-    Title = "Phúc Hậu 7A",
+    Title = "Phúc hậu roblox tổng hợp 7A",
     SubTitle = "Blox Fruit",
     TabWidth = 157,
     Size = UDim2.fromOffset(555, 320),
     Acrylic = true,
-    Theme = "dark",
-    MinimizeKey = Enum.KeyCode.End
+    Theme = "linght",
+    MinimizeKey = phúc hậu 7A
+})
+local Tabs = {
+        Main0=Window:AddTab({ Title="giới thiệu" }),
+        Main1=Window:AddTab({ Title="script fram" }),
+    Tabs.Main0:AddButton({
+    Title = "Discord",
+    Description = "phúc hậu Community",
+    Callback = function()
+        setclipboard("https://discord.gg/tboyroblox-community-1253927333920899153")
+    end
+})
+
+    Tabs.Main0:AddButton({
+    Title = "Youtuber",
+    Description = "Phúc hậu",
+    Callback = function()
+        setclipboard("https://www.youtube.com/@TBoyRoblox08")
+    end
+})
+
+    Tabs.Main0:AddButton({
+    Title = "Youtuber",
+    Description = "hậu 7A",
+    Callback = function()
+        setclipboard("https://www.youtube.com/@TBoyGamer08")
+    end
+})
+    
+    Tabs.Main1:AddButton({
+    Title="Script Setting hub",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://pastefy.app/AjS0TLCt/raw"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="Script trẩu v9",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/trungdao2k4/buffalo/refs/heads/main/traurobloxv9.lua"))()
+  end
+})
+Tabs.Main1:AddButton({
+    Title="longhihi hub",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet(" https://raw.githubusercontent.com/longhihilonghihi-hub/MainV2/refs/heads/main/RedzHubV2.lua"))()
+  end
+})
+Tabs.Main1:AddButton({
+    Title="Script gravity",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))()
+  end
 })
